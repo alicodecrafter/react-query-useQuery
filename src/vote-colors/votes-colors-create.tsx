@@ -104,12 +104,12 @@ export const VotesColorsCreate = ({
                   d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                 ></path>
               </svg>
-              Adding...
+              Добавление...
             </span>
           ) : (
             <>
               <Plus className="w-5 h-5 mr-2" />
-              Add New Color
+              Добавить цвет
             </>
           )}
         </button>
@@ -119,7 +119,7 @@ export const VotesColorsCreate = ({
           isError ? "opacity-100" : "opacity-0"
         }`}
       >
-        Error adding new color. Please try again.
+        Ошибка при создании цвета. Попробуйте еще раз.
       </div>
     </div>
   );
