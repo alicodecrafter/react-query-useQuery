@@ -6,7 +6,7 @@ import {
 } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button.tsx";
-import { CardImage } from "@/components/CardPost.tsx";
+import { CardImage } from "@/components/card-post.tsx";
 
 type Order = "asc" | "desc";
 
@@ -115,7 +115,7 @@ const useFetchInifinityPhotos = () => {
   });
 };
 
-function App() {
+function UseQueryLesson() {
   const { data, isLoading, fetchNextPage, hasNextPage, isFetchingNextPage } =
     useFetchInifinityPhotos();
 
@@ -282,4 +282,4 @@ const PostDetails = ({
   );
 };
 
-export default App;
+export default UseQueryLesson;

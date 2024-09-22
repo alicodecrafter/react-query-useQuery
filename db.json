@@ -1,0 +1,32 @@
+{
+  "colors": [
+    {
+      "id": "1",
+      "name": "Red",
+      "votes": 35,
+      "bg": "#ef4444",
+      "textColor": "#b91c1c"
+    },
+    {
+      "id": "2",
+      "name": "Blue",
+      "votes": 34,
+      "bg": "#3b82f6",
+      "textColor": "#1e3a8a"
+    },
+    {
+      "id": "3",
+      "name": "Green",
+      "votes": 17,
+      "bg": "#10b981",
+      "textColor": "#047857"
+    },
+    {
+      "id": "5",
+      "name": "Yellow",
+      "votes": 53,
+      "bg": "#f59e0b",
+      "textColor": "#b45309"
+    }
+  ]
+}
