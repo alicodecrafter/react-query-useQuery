@@ -1,9 +1,9 @@
 import { Plus } from "lucide-react";
 import { useState } from "react";
-import { getDarkenColor } from "@/vote-colors/helpers";
-import { useCreateColor } from "@/vote-colors/hooks/use-create-color.ts";
-import { toast } from "react-toastify";
 import { Color } from "@/vote-colors/types";
+import { useCreateColor } from "@/vote-colors/hooks/use-create-color.ts";
+import { getDarkenColor } from "@/vote-colors/helpers";
+import { toast } from "react-toastify";
 
 export const VotesColorsCreate = ({
   handleAddedColor,

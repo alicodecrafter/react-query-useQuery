@@ -7,8 +7,8 @@ export const useCreateColor = () => {
 
   return useMutation({
     mutationFn: createColor,
-    onSuccess: () => {
-      return queryClient.invalidateQueries({
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
         queryKey: GET_COLORS_KEY,
       });
     },

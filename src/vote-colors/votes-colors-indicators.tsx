@@ -16,7 +16,9 @@ export const VotesColorsIndicators = () => {
       })),
   });
 
-  // longSimulatorTask();
+  console.log("Render");
+
+  /*longSimulatorTask();*/
 
   return (
     <div>

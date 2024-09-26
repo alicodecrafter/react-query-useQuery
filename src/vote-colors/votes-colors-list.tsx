@@ -1,14 +1,15 @@
 import { ThumbsUp, Trash2 } from "lucide-react";
+import { Color } from "@/vote-colors/types";
 import { useFetchColors } from "@/vote-colors/hooks/use-fetch-colors.ts";
 import { useUpdateColor } from "@/vote-colors/hooks/use-update-color.ts";
-import { Color } from "@/vote-colors/types";
-import { toast } from "react-toastify";
 import { useDeleteColor } from "@/vote-colors/hooks/use-delete-color.ts";
+import { toast } from "react-toastify";
 
 export const VoteColorsList = () => {
   const { data: colors, isLoading, isError } = useFetchColors();
+
   const {
-    mutate,
+    mutate: onVote,
     isPending: isUpdatingVote,
     isError: isUpdateError,
   } = useUpdateColor();
@@ -16,7 +17,7 @@ export const VoteColorsList = () => {
   const { mutate: onDelete, isPending: isDeletingVote } = useDeleteColor();
 
   const handleVote = ({ id, votes }: Color) => {
-    mutate(
+    onVote(
       {
         id,
         votes: votes + 1,

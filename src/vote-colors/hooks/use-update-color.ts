@@ -25,14 +25,12 @@ export const useUpdateColor = () => {
 
       return { previousColors };
     },
-
     onError: (_, __, context) => {
       console.log(context);
       if (context?.previousColors) {
         queryClient.setQueryData(GET_COLORS_KEY, context.previousColors);
       }
     },
-
     onSettled: () => {
       queryClient.invalidateQueries({
         queryKey: GET_COLORS_KEY,
