@@ -4,7 +4,7 @@ import { AddColor, Color, UpdateColorVotes } from "@/vote-colors/types";
 export const fetchColors = () => Api.get<Color[]>("/colors");
 
 export const voteForColor = ({ id, votes }: UpdateColorVotes) =>
-  Api.patch<Color>(`/colors/${id}`, {
+  Api.patch<Color>(`/colorsss/${id}`, {
     votes,
   });
 

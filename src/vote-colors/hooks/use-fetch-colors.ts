@@ -8,7 +8,7 @@ export const useFetchColors = <TData = Color[]>(
     "queryFn" | "queryKey"
   >,
 ) => {
-  return useQuery<Color[], Error, TData>({
+  return useQuery({
     queryKey: GET_COLORS_KEY,
     queryFn: fetchColors,
     ...options,

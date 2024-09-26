@@ -1,5 +1,5 @@
-import { deleteColor } from "@/vote-colors/api";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { deleteColor } from "@/vote-colors/api";
 import { GET_COLORS_KEY } from "@/vote-colors/hooks/use-fetch-colors.ts";
 import { Color } from "@/vote-colors/types";
 
